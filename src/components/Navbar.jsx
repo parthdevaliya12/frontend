@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMoon } from "react-icons/hi";
+import logo from "/logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -68,7 +69,7 @@ export default function Navbar() {
             className="font-semibold text-lg text-cyan-400 cursor-pointer"
             onClick={() => handleScroll("home")}
           >
-            PD.
+            <img src={logo} alt="Logo" className="h-8" />
           </h1>
 
           {/* Desktop Links */}
